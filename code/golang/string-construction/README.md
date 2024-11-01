@@ -20,10 +20,10 @@ where:
 ## Result
 
 ```
-PS .\git\golang-algorithms-benchmarks\code\golang\composing-strings> go test -benchmem -bench .
+PS .\git\golang-algorithms-benchmarks\code\golang\string-construction> go test -benchmem -bench .
 goos: windows
 goarch: amd64
-pkg: m/code/golang/composing-strings
+pkg: m/code/golang/string-construction
 cpu: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
 BenchmarkSprintfNumber-8                 3688153               327.0 ns/op            56 B/op          1 allocs/op
 BenchmarkConcatNumber-8                  7981536               149.1 ns/op            55 B/op          1 allocs/op
@@ -32,7 +32,7 @@ BenchmarkConcatStringNumber-8            8134010               158.8 ns/op      
 BenchmarkSprintfString-8                 3305829               362.5 ns/op            47 B/op          3 allocs/op
 BenchmarkConcatString-8                 10952772               114.7 ns/op             7 B/op          0 allocs/op
 PASS
-ok      m/code/golang/composing-strings 9.250s
+ok      m/code/golang/string-construction 9.250s
 ```
 
 Using the + operator for string construction is more efficient in both speed and memory usage compared to fmt.Sprintf, especially in performance-critical applications.
