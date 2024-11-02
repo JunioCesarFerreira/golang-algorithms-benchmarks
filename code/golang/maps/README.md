@@ -18,7 +18,7 @@ where:
 - `-bench .` runs all benchmark functions.
 - `-benchmem` includes memory allocation statistics.
 
-## Result
+## Benchmark Result
 
 For size=10^5
 ```

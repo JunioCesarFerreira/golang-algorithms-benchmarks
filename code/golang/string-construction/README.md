@@ -17,7 +17,7 @@ where:
 - `-bench .` run all benchmark functions.
 - `-benchmem` includes memory allocation statistics.
 
-## Result
+## Benchmark Result
 
 ```
 PS .\git\golang-algorithms-benchmarks\code\golang\string-construction> go test -benchmem -bench .
